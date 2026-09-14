@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #141414;
+  background: #f7f4ef;
+  font-family: "Helvetica Neue", Helvetica, Inter, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f7f4ef;
+  min-height: 100vh;
+}
+
+::selection {
+  background: #2f5d50;
+  color: #faf9f6;
+}
+
+.label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a8a8a;
+}
+
+.hairline {
+  height: 1px;
+  background: #e3ded6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
